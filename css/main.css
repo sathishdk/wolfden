@@ -125,14 +125,19 @@ nav.main-menu ul li a:hover{
 	padding: 10px 0px 0px 0px;
 }
 .footer{
-	margin-top: 420px;
+	margin-top: 410px;
+	float: left;
 }
 .footer h3{
 	font-size: 15px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
-.footer .slideshow img{
+.footer #slideshow img{
+	width: 100%;
+}
+.footer .gallery, .footer .contact, .footer .recent-activity{
+	float: left;
 	width: 100%;
 }
 .footer .contact p{
@@ -180,31 +185,53 @@ nav.main-menu ul li a:hover{
     position: relative;
     margin: 0px auto; 
     width: 100%;
-    height: auto;
-    display: block;
-}
-.clearfix:after{    
-   content: " ";
-   display: table;
-   clear: both;
+		height: auto;
+		float: left;
 }
 #slideshow > div { 
     position: absolute; 
     top: 10px; 
-    left: 0px; 
-    right: 0px; 
+    left: 0px;
+    right: 0px;
     bottom: 10px; 
 }
-#slideshow > div img{
+#slideshow > div > img{
 	width: 100%;
+	height: auto;
 }
 
 .row.desktop{
 	display: block;
 }
-.row.mobile{
+.row.mobile-menu-bar, .row.mobile-nav, .row.mobile-banner{
 	display: none;
 }
+.mobile-nav > .col-md-12{
+	padding: 0px;
+}
+.mobile-nav nav ul{
+	width: 100%;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+.mobile-nav nav ul li{
+	width: 100%;
+	list-style: none;
+}
+.mobile-nav nav ul li a{
+	width: 100%;
+	float: left;
+	color: #fff;
+	padding: 12px 0px 12px 40px;
+	text-decoration: none;
+}
+.mobile-nav nav ul li a:hover{
+	background: #ccc;
+	color: #444;
+	font-weight: 700;
+}
+
 
 
 /*** Tablet Version ***/
@@ -228,22 +255,16 @@ nav.main-menu ul li a{
 .footer{
 	margin-top: 210px;
 }
+.gallery{
+	height: 475px;
+}
 .phone-number h4{
 	width: 100%;
 }
-.col-md-4.gallery{
-	padding-bottom: 410px;
-}
-.col-md-4.contact{
-	display: block;
-}
-.col-md-4.recent-activity{
-	display: block;
-}
 
 }
 
-@media only screen and (min-width: 1024px) and (orientation: landscape){
+@media only screen and (min-width: 1024px) and (max-width: 1100px) and (orientation: landscape){
 	
 nav.main-menu ul li a{
 	padding: 15px 20px 10px;
@@ -264,12 +285,76 @@ nav.main-menu ul li a{
 /*** Mobile Version ***/
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
-	
+
+body{
+	background: none;
+	background-color: #1a1a1a;
+}
+.row.mobile-banner > .col-md-12{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 0px;
+}
+.row.mobile-banner{
+	display: block;
+}
+.mobile-banner img{
+	width: 100%;
+	height: auto;
+}
+.connect{
+	margin: 5px 0px;
+}
+.connect li a img{
+	opacity: 1;
+}
 .connect.pull-left{
 	display: none;
 }
 .connect.pull-left.dark{
 	display: block;
+}
+.row.desktop{
+	display: none;
+}
+.row.mobile-menu-bar{
+	display: block;
+	background-color: #D6D6D6;
+}
+.row.mobile-menu-bar .col-sm-8{
+	width: 60%;
+	float: left;
+}
+.row.mobile-menu-bar .col-sm-4{
+	width: 40%;
+	float: left;
+	border-left: 1px solid #444;
+	color: #444;
+}
+.hamburger{
+	font-size: 25px;
+	padding: 15px 0px 0px 0px;
+	float: left;
+	width: 100%;
+}
+.hamburger a{
+	color: #444;
+	float: left;
+	width: 100%;
+}
+.hamburger a i{
+	float: left;
+	width: 20%;
+}
+.hamburger a p{
+	float: left;
+	width: 80%;
+	font-size: 18px;
+	font-weight: 700;
+}
+.mobile-nav{
+	display: none;
 }
 nav.main-menu ul li a{
 	padding: 15px 20px 10px;
@@ -277,12 +362,17 @@ nav.main-menu ul li a{
 }
 .phone-number{
 	padding-top: 0px;
+	font-size: 13px;
 }
 .phone-number h4{
+	font-size: 13px;
 	margin-bottom: 0px;
 }
 .footer{
-	margin-top: 310px;
+	margin-top: 0px;
+}
+.gallery{
+	height: 225px;
 }
 .topbar{
 	background-color: #D6D6D6;
@@ -290,14 +380,8 @@ nav.main-menu ul li a{
 .connect li:first-child{
 	display: none;
 }
-.col-md-4.gallery{
-	padding-bottom: 0px;
-}
-.row.desktop{
-	display: none;
-}
-.row.mobile{
-	display: none;
+.social-media{
+	text-align: center;
 }
 
 }
