@@ -11,4 +11,8 @@ setInterval(function() {
     .appendTo('#slideshow');
 },  3000);
 
+$(".mobile-menu").on('click', function(){
+	$('.mobile-nav').slideToggle();
+});
+
 /********************/
