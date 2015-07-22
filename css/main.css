@@ -320,6 +320,7 @@ body{
 }
 .row.mobile-menu-bar{
 	display: block;
+	border-bottom: 1px solid #000;
 	background-color: #D6D6D6;
 }
 .row.mobile-menu-bar .col-sm-8{
@@ -329,7 +330,7 @@ body{
 .row.mobile-menu-bar .col-sm-4{
 	width: 40%;
 	float: left;
-	border-left: 1px solid #444;
+	border-left: 1px solid #000;
 	color: #444;
 }
 .hamburger{
