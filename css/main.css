@@ -181,6 +181,8 @@ nav.main-menu ul li a:hover{
 	background-color: #000;
 	font-size: 13px;
 }
+/********** Slideshow ************/
+
 #slideshow { 
     position: relative;
     margin: 0px auto; 
@@ -199,6 +201,8 @@ nav.main-menu ul li a:hover{
 	width: 100%;
 	height: auto;
 }
+
+/********************************/
 
 .row.desktop{
 	display: block;
@@ -232,6 +236,45 @@ nav.main-menu ul li a:hover{
 	font-weight: 700;
 }
 
+/************* Inner Pages *************/
+
+.row.section{
+	width: 100%;
+	margin-top: 300px;
+	margin-bottom: 20px;
+	background: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+}
+.row.section h1, .row.section h2, .row.section h3{
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.row.section h1{
+	font-size: 24px;
+	margin-top: 0px;
+}
+.row.section h2{
+	font-size: 18px;
+}
+.row.section h2 img{
+	width: 100%;
+	height: auto;
+}
+.row.section h3{
+	font-size: 16px;
+}
+.row.section p{
+	font-size: 13px;
+	color: #000;
+}
+.row.section ul{
+	font-size: 13px;
+	color: #000;
+	list-style: none;
+}
+
+/***************************************/
 
 
 /*** Tablet Version ***/
@@ -261,6 +304,15 @@ nav.main-menu ul li a{
 .phone-number h4{
 	width: 100%;
 }
+.row.section{
+	margin-top: 150px;
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.row.section ul{
+	padding: 0px;
+}
 
 }
 
@@ -278,6 +330,9 @@ nav.main-menu ul li a{
 }
 .footer{
 	margin-top: 310px;
+}
+.row.section{
+	margin-top: 225px;
 }
 
 }
@@ -351,7 +406,7 @@ body{
 .hamburger a p{
 	float: left;
 	width: 80%;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 700;
 }
 .mobile-nav{
@@ -384,5 +439,16 @@ nav.main-menu ul li a{
 .social-media{
 	text-align: center;
 }
-
+.row.section{
+	margin-top: 0px;
+	position: relative;
+	top: -150px;
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -120px;
+}
+.row.section ul{
+	padding: 0px;
+}
 }
